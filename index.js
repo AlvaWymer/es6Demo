@@ -63,5 +63,20 @@ for(let item of recus.keys()){
     console.log(item);
 }
 
+// 输出数组 的索引 和数值
+let recuss = [1,2,3,4,5];
+for(let [index,val] of recuss.entries()){
+    console.log(index + ':' + val);
+}
+
+// 遍历数组
+let arra=['123','456','789']
+let list=arra.entries();
+console.log(list.next().value);
+console.log(list.next().value);
+console.log(list.next().value);
+
+
+
 
 
