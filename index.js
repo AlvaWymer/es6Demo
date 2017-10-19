@@ -44,3 +44,24 @@ console.log(nums.find(function(value,index,numss){
     return value > 5 ;
 }))
 
+
+//  数组填充
+// 第一个参数是填充的变量，第二个是开始填充的位置，第三个是填充到的位置。
+let arr =['yang','nai','hua'];
+arr.fill('杨乃华',2,3);
+console.log(arr);
+
+// for of 循环, 循环遍历里面的每个数据
+let recu = [1,2,3,4,5,6,7,8,9];
+for(let item of recu){
+    console.log(item);
+}
+
+// 输出数组索引
+let  recus = [2,3,4,5,6,7,8,9];
+for(let item of recus.keys()){
+    console.log(item);
+}
+
+
+
