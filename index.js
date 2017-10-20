@@ -160,7 +160,46 @@ console.log(insArr.join('|'));
 // 数组转化为字符串, 中间使用逗号进行隔开了
 console.log(insArr.toString()+ 'toString');
 
+// 对象赋值
+let name = 'paul';
+let age  = '34'
+let nomEtAge = {name, age};
+console.log(nomEtAge);
 
+
+//  从后台取了 一个 key 值的话，那么，将这个key值塞入到前台：
+let keys = 'name';
+var val = {
+    [keys] : 'yang'
+}
+console.log(val.name); //  注意： 取值的时候 是使用的是从后台获取到的可以的名字
+
+
+
+// 自定义对象的方法
+var obj= {
+    add: function(a,b){
+        return a+b;
+    }
+}
+console.log(obj.add(1,2));
+
+
+//对象比较  Object.i
+var obj1 = {name : 'yangnaihua'};
+var obj2 = {name : 'yangnaihua'};
+// 对象里面的属性记性比较
+console.log(obj1.name === obj2.name);
+// ES6 进行比较
+console.log(Object.is(obj1.name,obj2.name));
+
+console.log('------');
+
+// 区分 === 和is 的区别
+console.log(+0 === -0);
+console.log(NaN === NaN);
+console.log(Object.is(+0,-0));
+console.log(Object.is(NaN,NaN));
 
 
 
