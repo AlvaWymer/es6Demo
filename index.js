@@ -77,6 +77,32 @@ console.log(list.next().value);
 console.log(list.next().value);
 
 
+// es6 箭头函数和扩展
+// 抛出异常
+function add(a,b=1){
+    // 'use strict'
+    if(a == 0){
+        // throw new Error('error');
+    }
+    return a + b;
+}
+console.log(add(0));
+
+
+// 箭头函数（简单）
+let fun = (a,b=2) => a+b;
+console.log(fun(1)+ '箭头函数');
+
+
+// 复杂的箭头函数，里面包含两句以上的命令
+let funs = (c,d=3) =>{
+    console.log(c+ '=c');
+    console.log(d + '=d');
+
+    // 如果是外部方法调用的话，那么  一定要有返回值
+    return c + d;
+}
+console.log(funs(1)+ '外部调用的');
 
 
 
