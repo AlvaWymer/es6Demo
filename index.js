@@ -105,4 +105,27 @@ let funs = (c,d=3) =>{
 console.log(funs(1)+ '外部调用的');
 
 
+// 解构赋值
+let jsonass = {
+    a : 'yang',
+    b : 'nai',
+    c : 'hua'
+}
+function ass({a,b,c='huahua'}){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+ass(jsonass);
+
+// 数组的结构赋值
+let ars = ['技术','gaibian','shenghuo'];
+function arrays(a,b,c){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+arrays(...ars);
+
+
 
