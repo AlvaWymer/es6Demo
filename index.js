@@ -127,5 +127,39 @@ function arrays(a,b,c){
 }
 arrays(...ars);
 
+//  in 的使用   对象判断
+let ins = {
+        a : 'yuzhenzhong',
+        b : 'b'
+}
+console.log('b' in ins);
+
+// in 的使用 数组判断, 如果数组中含有的的是，是非0的长度，如果数组中没有的话，那么返回的就是0
+let insArr = ['a','b','c','v'];
+console.log(0 in insArr);
+
+
+// foreach   循环
+insArr.forEach((index,val) => console.log(index,val));
+
+
+// filter 过滤器  == 遍历循环
+insArr.filter(x => console.log(x + ':'));
+
+
+// some     ==  循环遍历
+insArr.some(x => console.log(x));
+
+//map   将所有的数组元素统统都替换成web
+console.log(insArr.map(x => 'web'));
+
+
+
+
+
+
+
+
+
 
 
