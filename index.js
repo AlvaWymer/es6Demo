@@ -154,6 +154,12 @@ insArr.some(x => console.log(x));
 console.log(insArr.map(x => 'web'));
 
 
+// 在数组织中插入元素
+console.log(insArr.join('|'));
+
+// 数组转化为字符串, 中间使用逗号进行隔开了
+console.log(insArr.toString()+ 'toString');
+
 
 
 
